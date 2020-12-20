@@ -15,7 +15,7 @@ import lombok.Data;
 public class Login {
 
 	@Id @GeneratedValue(strategy = GenerationType.AUTO) @Column(name = "EMPLOYEE_ID")
-	private int empId;
+	private Integer empId;
 	
 	@Column(name = "EMPLOYEE_NAME", nullable = false)
 	private String name;
