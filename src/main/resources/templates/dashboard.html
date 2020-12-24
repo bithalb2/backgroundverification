@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html>
+<head xmlns:th="http://www.thymeleaf.org">
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+</head>
+<body>
+	<div th:switch=${loginDto.roleId}>
+		<p th:case="1">Employee Page</p>
+ 	 	<p th:case="2">BGV Team</p>
+	</div>
+</body>
+</html>

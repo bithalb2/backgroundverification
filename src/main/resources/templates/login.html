@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<!-- <meta charset="ISO-8859-1"> -->
+<title>Login : Background Verification System</title>
+</head>
+<body>
+	<div align = "center">
+		<h2>Login Form</h2>
+<!-- 		<form th:action="@{/login}" action="#" method="get" th:object="${loginDto}"> -->
+		
+<!-- 			<input type="text" placeholder="EmployeeId" th:field="*{empId}" required="required"/> <br><br> -->
+			
+<!-- 			<input type="password" placeholder="Password" th:field="*{password}" required="required"/> <br><br> -->
+			
+<!-- 			<select th:field="*{roleId}" required="required"> -->
+<!--     			<option value="">Select Role</option> -->
+<!--     			<option value="1">Employee</option> -->
+<!--     			<option value="2">BGV Team</option> -->
+<!--     		</select> -->
+    		
+<!--     		<input type="submit" value="Login" > -->
+<!-- 		</form> -->
+		<form th:action="@{/login}" method="post" th:object="${loginDto}">
+		
+			<input type="text" placeholder="EmployeeId" th:field="*{empId}" required="required"/> <br><br>
+			
+			<input type="password" placeholder="Password" th:field="*{password}" required="required"/> <br><br>
+			
+			<select th:field="*{roleId}" required="required">
+    			<option value="">Select Role</option>
+    			<option value="1">Employee</option>
+    			<option value="2">BGV Team</option>
+    		</select>
+    		
+    		<input type="submit" value="Login" >
+		</form>
+	</div>
+</body>
+</html>
